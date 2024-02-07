@@ -8,12 +8,8 @@ spec:
   source:
     repoURL: https://github.com/SagarShinde11/argo-cd.git
     targetRevision: HEAD
-    path: dev
+    path: guestbook
   destination:
     server: https://kubernetes.default.svc
-    namespace: argo-cd
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=true    
-    automated: 
-      selfheal:true
+    namespace: guestbook
+ 
